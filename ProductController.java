@@ -68,4 +68,13 @@ public class ProductController {
 	{
 		return  productDao.deleteProduct(productId);
 	}
+	
+	//delete
+	//  / product/{id}
+	@DELETE
+	@Path("/{name}")
+	public Long deleteProduct(@PathParam("name") long productName)
+	{
+		return  productDao.deleteProduct(productName);
+	}
 }
