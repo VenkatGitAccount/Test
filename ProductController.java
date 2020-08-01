@@ -47,6 +47,7 @@ public class ProductController {
 	@GET
 	public List<Product> getAllProducts()
 	{
+		//Getting all products
 		return productDao.getAllProducts();
 	}
 	
